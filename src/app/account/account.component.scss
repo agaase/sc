@@ -1,0 +1,33 @@
+.account-wrapper {
+  padding: calc(var(--unsp)*5);
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(var(--unsp)*8);
+    
+    label {
+      margin-bottom: var(--unsp);
+    }
+    
+    input {
+      border: 1px solid var(--col-med-light);
+      border-radius: 8px;
+      font-family: var(--ff);
+      font-size: calc(var(--bfs) * 1.2);
+      width: 80%;
+      height: calc(var(--unsp)*10);
+      padding: var(--unsp);
+    }
+  }
+  
+  .button {
+    &.update {
+      margin-top: calc(var(--unsp) * 5);
+    }
+    
+    &.signout {
+      margin-top: calc(var(--unsp) * 5);
+    }
+  }
+}

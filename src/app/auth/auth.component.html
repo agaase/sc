@@ -1,1 +1,24 @@
-<p>auth works!</p>
+<div class="auth-wrapper">
+  <form class="form-widget">
+    <p class="welcome-msg">Welcome to StreetClub</p>
+    <p class="description">Enter your email and we'll send you a magic link to login</p>
+    <div>
+      <input
+        #input
+        class="input-email"
+        type="email"
+        placeholder="Your email"
+      />
+    </div>
+    <div>
+      <button
+        type="submit"
+        (click)="handleLogin(input.value)"
+      class="button email-button sc-button"
+      [disabled]="loading"
+      >
+      {{loading ? 'Loading' : 'Send magic link'}}
+      </button>
+    </div>
+  </form>
+</div>

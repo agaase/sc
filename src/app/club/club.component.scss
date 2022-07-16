@@ -1,0 +1,99 @@
+.club-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--unsp) * 6) calc(var(--unsp) * 4);
+  background-color: var(--col-very-dark);
+  color: var(--col-med-light);
+  
+
+  .club-title {
+    font-size: calc(var(--bfs) * 2.2);
+  }
+}
+
+.club-members {
+  display: flex;
+  margin-top: calc(var(--unsp) * 3);
+  margin-left: calc(var(--unsp) * 2);
+  
+  .club-member {
+    height: calc(var(--unsp) * 6);
+    width: calc(var(--unsp) * 6);
+    border: 1px solid var(--col-med-dark);
+    border-radius: 50%;
+    background-color: var(--col-med-light);
+    margin-left: calc(var(--unsp) * -2);
+  }
+}
+
+.club-actions {
+  display: flex;
+  margin-left: auto;
+  margin-top: calc(var(--unsp) * 2);
+  
+  .club-action {
+    margin-left: calc(var(--unsp) * 2);
+    text-decoration: none;
+  }
+}
+
+.search-wrapper {
+  .search-box {
+    text-overflow: ellipsis;
+    background-color: #fff;
+    font-family: var(--ff);
+    font-size: calc(var(--bfs) * 1.2);
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: calc( var(--unsp) * 2);
+    
+    &:focus {
+       border-color: #4d90fe;
+    }
+  }
+  
+  .no-entries-message {
+    margin-top: calc( var(--unsp) * 2);
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+.club-items {
+  
+  .club-item {
+    border-bottom: 1px solid var(--col-med-light);
+    text-decoration: none;
+    color: var(--col-very-dark);
+    display: flex;
+    padding: calc(var(--unsp) * 6) calc(var(--unsp) * 6);
+    
+    .club-item-title {
+      font-size: calc(var(--bfs) * 1.6);
+    }
+    
+    .club-item-vendor {
+      color: var(--col-med-dark);
+      font-size: calc(var(--bfs) * 1.2);
+    }
+    
+    .club-item-votes {
+      border: 1px solid var(--col-very-dark);
+      border-radius: 8px;
+      display: flex;
+      padding: var(--unsp) calc(var(--unsp) * 2);
+      height: 24px;
+      margin-left: auto;
+      
+      .upvote-icon {
+        width: auto;
+        height: 13px;
+        margin-top: var(--unsp);
+        margin-right: var(--unsp);
+      }
+    }
+  }
+}

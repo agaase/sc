@@ -1,0 +1,30 @@
+.auth-wrapper {
+  padding-top: calc(var(--unsp) * 20);
+  text-align: center;
+}
+
+.welcome-msg {
+  font-size: calc(var(--bfs) * 2);
+  font-weight: bold;
+}
+
+.description {
+  font-size: var(--bfs);
+  margin-top: calc(var(--unsp) * 2);
+}
+
+.input-email {
+  margin-top: calc(var(--unsp) * 4);
+  font-size: calc(var(--bfs) * 1.3);
+  font-family: var(--ff);
+  width: 70%;
+  height: 36px;
+}
+
+.email-button {
+  margin-top: calc(var(--unsp) * 4);
+  background-color: var(--col-very-dark);
+  height: 36px;
+  font-size: calc(var(--bfs) * 1.3);
+  font-family: var(--ff);
+}

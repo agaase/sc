@@ -1,9 +1,9 @@
-<div class="form-widget">
-  <div>
+<div class="form-widget account-wrapper">
+  <div class="field email">
     <label for="email">Email</label>
     <input id="email" type="text" [value]="session?.user?.email" disabled/>
   </div>
-  <div>
+  <div class="field name">
     <label for="username">Name</label>
     <input
       #username
@@ -12,7 +12,7 @@
       [value]="profile?.username ?? ''"
     />
   </div>
-  <div>
+  <div class="field website">
     <label for="website">Website</label>
     <input
       #website
@@ -24,7 +24,7 @@
 
   <div>
     <button
-      class="button block primary"
+      class="button block primary sc-button update"
       (click)="updateProfile(username.value, website.value)"
       [disabled]="loading"
     >
@@ -33,7 +33,7 @@
   </div>
 
   <div>
-    <button class="button block" (click)="signOut()">
+    <button class="button block sc-button signout" (click)="signOut()">
       Sign Out
     </button>
   </div>

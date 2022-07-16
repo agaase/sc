@@ -1,0 +1,20 @@
+<div class="newitem-wrapper">
+
+<input
+  class="controls search-box"
+  type="text"
+  id="pac-input"
+  placeholder="Search for a place"
+/>
+<div class="sel-search-res">
+  <div *ngIf="!!selItem" class="item-details">
+    <p class="name">{{selItem.name}}</p>
+    <p class="address">{{selItem.address}}</p>
+  </div>
+  
+  <a class="add-item sc-button-light" (click)="onAdd()">
+    Add this place
+  </a>
+</div>
+<div class="map-wrapper" id="map"></div>
+</div>

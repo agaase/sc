@@ -1,0 +1,30 @@
+  .club-item {
+    border-bottom: 1px solid var(--col-med-light);
+    display: flex;
+    padding: calc(var(--unsp) * 6) calc(var(--unsp) * 6);
+    
+    .club-item-title {
+      font-size: calc(var(--bfs) * 1.6);
+    }
+    
+    .club-item-vendor {
+      color: var(--col-med-dark);
+      font-size: calc(var(--bfs) * 1.2);
+    }
+    
+    .club-item-votes {
+      border: 1px solid var(--col-very-dark);
+      border-radius: 8px;
+      display: flex;
+      padding: var(--unsp) calc(var(--unsp) * 2);
+      height: 24px;
+      margin-left: auto;
+      
+      .upvote-icon {
+        width: auto;
+        height: 18px;
+        margin-top: var(--unsp);
+        margin-right: var(--unsp);
+      }
+    }
+  }

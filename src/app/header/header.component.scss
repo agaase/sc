@@ -1,0 +1,28 @@
+.header-wrapper {
+  height: 60px;
+  display: flex;
+}
+
+.header-menu-item {
+  height: 100%;
+  padding: 0 12px;
+  line-height: 60px;
+}
+
+.logo{
+  img {
+    height: 45%;
+    margin-top: 10%;
+    width: auto;
+  }
+}
+
+.profile{
+  margin-left: auto;
+  
+  img {
+    height: 45%;
+    margin-top: 10%;
+    width: auto;
+  }
+}

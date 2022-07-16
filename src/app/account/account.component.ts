@@ -1,20 +1,21 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Profile, SupabaseService} from "../supabase.service";
-import {Session} from "@supabase/supabase-js";
 
 @Component({
   selector: 'app-account',
-  templateUrl: './account.component.html'
+  templateUrl: './account.component.html',
+  styleUrls: ['./account.component.scss'],
 })
 export class AccountComponent implements OnInit {
   loading = false;
   profile: Profile | undefined;
 
-  @Input() session: Session | undefined;
+  session = this.supabase.session!;
 
   constructor(private readonly supabase: SupabaseService) { }
 
   ngOnInit() {
+    this.supabase.authChanges((_, session) => this.session = session!);
     this.getProfile();
   }
 

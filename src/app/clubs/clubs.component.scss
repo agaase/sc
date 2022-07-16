@@ -1,0 +1,38 @@
+.clubs-wrapper {
+  width: 100%;
+}
+
+.clubs-location-filter {
+  display: flex;
+  background-color: var(--col-very-dark);
+  padding: calc(var(--unsp) * 4) calc(var(--unsp) * 4);
+  
+  .location {
+    font-size: calc(var(--bfs) * 1.5);
+    color: var(--col-med-light);
+  }
+  
+  .dd-icon {
+    width: auto;
+    height: 16px;
+    margin-left: auto ;
+  }
+}
+
+.clubs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  
+  .club {
+    border-bottom: 1px solid var(--col-med-light);
+    padding: calc(var(--unsp) * 8) calc(var(--unsp) * 4);
+    text-decoration: none;
+    color: var(--col-very-dark);
+    
+    .club-title {
+      font-size: calc(var(--bfs) * 2);
+    }
+  }
+}

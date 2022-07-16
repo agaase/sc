@@ -8,6 +8,9 @@
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
+        },
+        "@schematics/angular:component": {
+          "style": "scss"
         }
       },
       "root": "",
@@ -27,13 +30,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/assets/annotorious.min.css"
+              "src/styles.scss",
+              "node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": [
-              "src/assets/annotorious.min.js",
-              "src/assets/annotorious.config.js"
-            ]
           },
           "configurations": {
             "production": {
@@ -106,5 +105,8 @@
       }
     }
   },
-  "defaultProject": "supabase-angular"
+  "defaultProject": "supabase-angular",
+  "cli": {
+    "analytics": "78c379c8-b7ed-41e1-a811-8b3877aec88a"
+  }
 }

@@ -1,0 +1,49 @@
+<div class="club-wrapper">
+  <div class="club-info-wrapper">
+    <div class="club-title">Desi Meals</div>
+    <div class="club-info">
+      <span>10 members, </span>
+      <span>2k views</span>
+    </div>
+    <div class="club-members">
+      <div class="club-member"></div>
+      <div class="club-member"></div>
+      <div class="club-member"></div>
+      <div class="club-member"></div>
+      <div class="club-member"></div>
+      <div class="club-member"></div>
+      <div class="club-member"></div>
+      <div class="club-member"></div>
+    </div>
+    <div class="club-actions">
+      <a class="club-action sc-button-light" routerLink="/add">
+        Add
+      </a>
+      <!--<div class="club-action sc-button-light">-->
+      <!--  Invite-->
+      <!--</div>-->
+    </div>
+  </div>
+  <div class="search-wrapper">
+    <input
+      class="controls search-box"
+      type="text"
+      placeholder="Search for a restaurant"
+      (change)="onChangeEvent($event)"
+    />
+    <div class='no-entries-message' *ngIf="!filteredItems.length">
+      No entries found.
+    </div>
+  </div>
+  <div class="club-items">
+    <a *ngFor="let item of filteredItems;" class="club-item" routerLink="/review">
+      <div class="club-item-details">
+        <div class="club-item-title">{{item.name}}</div>
+      </div>
+      <div class="club-item-votes">
+        <img class="upvote-icon" src='../assets/images/upvote-icon.png' />
+        <div class="upvotes-num">125</div>
+      </div>
+    </a>
+  </div>
+</div>
